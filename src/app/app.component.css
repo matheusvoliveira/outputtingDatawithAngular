@@ -1,0 +1,32 @@
+.name{
+    font-size: 2em;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'title cover'
+    'company cover'
+    'releasing cover'
+    'genre cover'
+    ;
+    max-width: 40vw;
+    max-height: 50vh;
+    padding: 20px;
+    align-items: space-between;
+    column-gap: 30px;
+    background-color: rgba(232, 230, 230, 0.945);
+    min-width: 460px ;
+}
+.cover{
+    height: 40vh;
+    grid-area: cover;
+}
+.name{
+    grid-area: title;
+}
+.releasing{
+    grid-area: releasing;
+}
+.genre{
+    grid-area: genre;
+}
